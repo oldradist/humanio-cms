@@ -1,0 +1,73 @@
+
+h1 {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+
+table {
+	border: black none solid;
+}
+
+tr {
+	border: white none solid;
+}
+
+td {
+	border: white none solid;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+td a { display:block; width:100%; text-decoration: none; color: black;}
+
+#TabHintergrund  td{
+  border-collapse: collapse;
+  background: url(../images/sunset.jpg);
+}
+
+.img-main {
+  /*background: url("images/zwei_loewen_03.jpg");*/
+  background: url("../images/eagle_01.jpg");
+  width: 940;
+  height: 530;	/* sunset = 197, pavel = 337 */
+  align: center;
+}
+
+.lblock { 
+width: 600px;
+font-family: Verdana,Arial,sans-serif; 
+font-size: 14px; 
+background-color: #ffffff;
+color: #000000; 
+padding: 20px; 
+margin-top: 40px;
+margin-bottom: 40px;
+margin-left: 20px;
+margin-right: 100px; 
+line-height: 18px; 
+border: #ddbb85 1px solid; 
+}
+
+.rblock { 
+width: 600px;
+font-family: Verdana,Arial,sans-serif;  
+font-size: 14px; 
+background-color: #ffffff; 
+color: #000000; 
+padding: 20px; 
+margin-top: 40px;
+margin-bottom: 40px;
+margin-left: 100px;
+margin-right: 20px; 
+line-height: 18px; 
+border: 1px solid #ddbb85; 
+}
+
+.service { 
+color: #ddbb85;
+}
+
+#trennlinie {
+color: #ddbb85;
+ }

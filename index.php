@@ -8,6 +8,8 @@ include("./includes/navigation.php");
 
 $query = $_SERVER["QUERY_STRING"];
 
+$site = 'home';
+
 parse_str($query);
 
 $base = $site;	

@@ -2,7 +2,7 @@
 
 $authorShort = "ame";
 $authorLong = "Alex Meerzon";
-$authorFTP = "u62117962-human-text";
+$authorFTP = "u62117962-all";
 
 $server = "wahre.info";
 ?>
@@ -53,7 +53,9 @@ if(isset($_POST['pwd']))
 			}
 		else
 			{
-				ftp_put($connect,$d.'/'.$filename."_".date("YmdHis").".txt",$tmp,FTP_ASCII)or die("Unable to upload");
+				$filenameFull = $filename."_".date("YmdHis").".txt";
+				
+				ftp_put($connect,$d.'/'.$filename.'/'.$filenameFull,$tmp,FTP_ASCII)or die("Unable to upload");
 						echo"File successfully uploaded to FTP";
 						
 				$result = 1;

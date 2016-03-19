@@ -24,11 +24,16 @@ $verz = dir ( './texte' );
 
 //##################
 
-$files = scandir('./texte', $blog);
+if(is_dir("./texte/$base"))
+{}
+else{mkdir("./texte/$base", 0700);}
 
-echo "<div  class=placeholder>";
-include("texte/placeholder.txt");
-echo "</div>";
+$files = scandir("./texte/$base", $blog);
+$blocks = [];
+
+//echo "<div  class=placeholder>";
+//include("texte/placeholder.txt");
+//echo "</div>";
 
 
 foreach ($files as $entry)
@@ -54,12 +59,17 @@ foreach ($files as $entry)
 		}
 		
 		echo "<div  class=$position>";
-		include("texte/$entry");
+		include("texte/$base/$entry");
 		echo "</div>";
-	}
+		
+		array_push($blocks, 1);
 
+	}	
 } 
 
+echo "<div  class=placeholder>";
+include("texte/placeholder.txt");
+echo "</div>";
 
 
 $verz->close ();
